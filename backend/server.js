@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Use full relative paths
-const authRoutes = require('./routes/authRoutes');
+const authRoutes = require('./routes/authroutes');
 const donorRoutes = require('./routes/donorRoutes');
 const inventoryRoutes = require('./routes/inventoryRoutes');
 const requestRoutes = require('./routes/requestRoutes');
