@@ -11,7 +11,7 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-// Use full relative paths
+// Routes
 const authRoutes = require('./routes/authRoutes');
 const donorRoutes = require('./routes/donorRoutes');
 const inventoryRoutes = require('./routes/inventoryRoutes');
@@ -24,7 +24,11 @@ app.use('/api/inventory', inventoryRoutes);
 app.use('/api/requests', requestRoutes);
 app.use('/api/issue', issuanceRoutes);
 
-app.get('/', (req, res) => res.send('BBMS Backend Running 🩸'));
+app.get('/', (req, res) => {
+  res.send('BBMS Backend is Running Successfully 🩸');
+});
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
