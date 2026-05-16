@@ -12,11 +12,11 @@ app.use(cors());
 app.use(express.json());
 
 // Routes with absolute relative paths
-const authRoutes = require('./routes/authRoutes');
-const donorRoutes = require('./routes/donorRoutes');
-const inventoryRoutes = require('./routes/inventoryRoutes');
-const requestRoutes = require('./routes/requestRoutes');
-const issuanceRoutes = require('./routes/issuanceRoutes');
+const authRoutes = require('./authRoutes');
+const donorRoutes = require('./donorRoutes');
+const inventoryRoutes = require('./inventoryRoutes');
+const requestRoutes = require('./requestRoutes');
+const issuanceRoutes = require('./issuanceRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/donors', donorRoutes);
