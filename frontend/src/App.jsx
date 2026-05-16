@@ -3,7 +3,7 @@ import { AuthProvider, AuthContext } from './context/AuthContext';
 import { useContext } from 'react';
 
 import Login from './pages/Login';
-import Sidebar from './components/Sidebar';
+import Sidebar from "./components/Sidebar";   // Capital S
 import Dashboard from './pages/Dashboard';
 import Donors from './pages/Donors';
 import Inventory from './pages/Inventory';
